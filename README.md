@@ -25,8 +25,8 @@ To do this, add PostgreSQL cartridge to your application:
     rhc cartridge add mysql-5.5 -a kitchensink
 
 Edit `src/main/resources/META-INF/persistence.xml` so that the data
-source points to `java:jboss/datasources/PostgreSQLDS`:
+source points to `java:jboss/datasources/MySQLDS`:
 
-    <jta-data-source>java:jboss/datasources/PostgreSQLDS</jta-data-source>
+    <jta-data-source>java:jboss/datasources/MySQLDS</jta-data-source>
 
 Commit this change, and push.
